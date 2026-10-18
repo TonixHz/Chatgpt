@@ -8,6 +8,7 @@ Prototipo de terror 3D retro en primera persona, creado con HTML, CSS, JavaScrip
 - **Ratón:** mirar alrededor.
 - **E:** interactuar con objetos.
 - **F:** encender/apagar linterna.
+- **Shift:** correr; la resistencia se consume y se recupera al caminar o descansar.
 - **ESC:** pausar.
 
 ## Objetivo del prototipo
@@ -27,3 +28,9 @@ La escena usa geometría simple, materiales compartidos, sombras desactivadas y 
 - Audio ambiental, pasos, interferencias y pistas.
 - Inventario, guardado y ajustes gráficos.
 - Mejoras de accesibilidad y controles táctiles.
+
+## Actualización de prototipo
+- La compuerta se eleva al restaurar la energía.
+- La criatura intenta respetar paredes y obstáculos en vez de avanzar atravesándolos.
+- Se agregó resistencia para correr, con indicador en pantalla.
+- La viñeta se intensifica cuando la criatura está cerca.
