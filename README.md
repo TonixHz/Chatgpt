@@ -14,6 +14,12 @@ Prototipo de terror 3D retro en primera persona, creado con HTML, CSS, JavaScrip
 ## Objetivo del prototipo
 Explorá la estación abandonada, encontrá el fusible, activá el panel y llegá a la compuerta. Algo empieza a seguirte cuando restaurás la energía.
 
+## Actualización de prototipo — BUILD 0.1.6
+- Se eliminó el zumbido ambiental continuo.
+- Se añadieron pulsos graves intermitentes cuando la criatura se acerca, en lugar de un tono constante.
+- La criatura ahora se detiene si la iluminás y la mantenés a la vista; cuando dejás de apuntarle, vuelve a moverse.
+- Los pasos y efectos breves de interferencia siguen activos.
+
 ## Publicar con GitHub Pages
 1. Entrá a **Settings → Pages** en el repositorio.
 2. En **Build and deployment**, elegí **Deploy from a branch**.
