@@ -20,6 +20,12 @@ Explorá la estación abandonada, encontrá el fusible, activá el panel y lleg�
 - La criatura ahora se detiene si la iluminás y la mantenés a la vista; cuando dejás de apuntarle, vuelve a moverse.
 - Los pasos y efectos breves de interferencia siguen activos.
 
+## Actualización de prototipo — BUILD 0.1.7
+- La luz directa acelera a la criatura en vez de detenerla.
+- El fusible cambió de ubicación y hay más objetos que revisar.
+- Nueva nota interactiva con el protocolo de luz/calor.
+- Compuerta industrial de lamas animadas, cables visibles y pasillo de salida con transición a negro.
+
 ## Publicar con GitHub Pages
 1. Entrá a **Settings → Pages** en el repositorio.
 2. En **Build and deployment**, elegí **Deploy from a branch**.
