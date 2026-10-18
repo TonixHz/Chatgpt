@@ -29,6 +29,11 @@ La escena usa geometría simple, materiales compartidos, sombras desactivadas y 
 - Inventario, guardado y ajustes gráficos.
 - Mejoras de accesibilidad y controles táctiles.
 
+## Actualización de prototipo — BUILD 0.1.4
+- La linterna ahora tiene un haz más potente, ancho y de mayor alcance.
+- Su intensidad disminuye progresivamente a medida que baja la batería.
+- El parpadeo cercano a la criatura se integra con la intensidad variable de la batería.
+
 ## Actualización de prototipo — BUILD 0.1.3
 - La criatura ahora calcula rutas alrededor de paredes y obstáculos con una búsqueda de caminos sobre una cuadrícula.
 - Cuando se acerca mucho, la linterna puede parpadear para aumentar la tensión.
