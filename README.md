@@ -21,6 +21,11 @@ Explorá la estación abandonada, encontrá el fusible, activá el panel y lleg�
 - Comportamiento inicial de la criatura (reemplazado en BUILD 0.1.8): la luz afectaba su movimiento. Ahora es ciega, deambula y rastrea ruido o el calor de la linterna.
 - Los pasos y efectos breves de interferencia siguen activos.
 
+## Actualización de prototipo — BUILD 0.1.12
+- El sigilo ahora cambia cómo te detecta la criatura: agacharte y moverte no genera ruido rastreable.
+- Caminar puede atraerla si está a unos 5,5 metros; correr genera ruido detectable hasta unos 14 metros.
+- Se eliminó el aviso repetitivo por cada paso al correr; el peligro se comunica cuando la criatura está relativamente cerca.
+
 ## Actualización de prototipo — BUILD 0.1.11
 - Se corrigió el ancho de la abertura en la pared del fondo: ahora coincide con la compuerta industrial y deja espacio para atravesarla.
 
