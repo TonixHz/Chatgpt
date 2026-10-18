@@ -20,6 +20,12 @@ Explorá la estación abandonada, encontrá el fusible, activá el panel y lleg�
 - La criatura ahora se detiene si la iluminás y la mantenés a la vista; cuando dejás de apuntarle, vuelve a moverse.
 - Los pasos y efectos breves de interferencia siguen activos.
 
+## Actualización de prototipo — BUILD 0.1.8
+- La criatura es ciega: se eliminaron los ojos visibles y ahora se orienta hacia estímulos, no hacia la mirada del jugador.
+- Tras activarse, deambula por la zona en lugar de perseguir automáticamente al jugador por proximidad.
+- Correr produce ruido repetido que la atrae; apuntarle directamente con la linterna hace que detecte el calor, investigue y acelere.
+- La nota de contención explica su ceguera, sus receptores táctiles y cómo evitar que te rastree.
+
 ## Actualización de prototipo — BUILD 0.1.7
 - La luz directa acelera a la criatura en vez de detenerla.
 - El fusible cambió de ubicación y hay más objetos que revisar.
