@@ -29,6 +29,13 @@ La escena usa geometría simple, materiales compartidos, sombras desactivadas y 
 - Inventario, guardado y ajustes gráficos.
 - Mejoras de accesibilidad y controles táctiles.
 
+## Actualización de prototipo — BUILD 0.1.5
+- Se agregó un ambiente sonoro grave y discreto usando Web Audio, sin descargar archivos de audio.
+- Pasos con ritmo y tono diferentes al caminar y correr.
+- Un tono grave aumenta según la proximidad de la criatura.
+- Nuevos efectos breves para interferencias, susurros y el interruptor de la linterna.
+- El audio se inicializa después de pulsar Entrar para respetar las restricciones del navegador.
+
 ## Actualización de prototipo — BUILD 0.1.4
 - La linterna ahora tiene un haz más potente, ancho y de mayor alcance.
 - Su intensidad disminuye progresivamente a medida que baja la batería.
