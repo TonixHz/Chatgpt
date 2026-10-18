@@ -9,6 +9,7 @@ Prototipo de terror 3D retro en primera persona, creado con HTML, CSS, JavaScrip
 - **E:** interactuar con objetos.
 - **F:** encender/apagar linterna.
 - **Shift:** correr; la resistencia se consume y se recupera al caminar o descansar.
+- **Ctrl:** agacharte; avanzás más lento y bajás el perfil para moverte con más sigilo.
 - **ESC:** pausar.
 
 ## Objetivo del prototipo
@@ -19,6 +20,10 @@ Explorá la estación abandonada, encontrá el fusible, activá el panel y lleg�
 - Se añadieron pulsos graves intermitentes cuando la criatura se acerca, en lugar de un tono constante.
 - Comportamiento inicial de la criatura (reemplazado en BUILD 0.1.8): la luz afectaba su movimiento. Ahora es ciega, deambula y rastrea ruido o el calor de la linterna.
 - Los pasos y efectos breves de interferencia siguen activos.
+
+## Actualización de prototipo — BUILD 0.1.10
+- Nueva mecánica de sigilo: agacharse con Ctrl reduce la velocidad y baja la cámara.
+- Se corrigió la secuencia de salida para que el final no se active antes de cruzar el pasillo.
 
 ## Actualización de prototipo — BUILD 0.1.9
 - Los marcadores rectangulares de interacción ahora son invisibles; se mantiene la detección por raycast y la tecla E.
