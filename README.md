@@ -29,6 +29,11 @@ La escena usa geometría simple, materiales compartidos, sombras desactivadas y 
 - Inventario, guardado y ajustes gráficos.
 - Mejoras de accesibilidad y controles táctiles.
 
+## Actualización de prototipo — BUILD 0.1.2
+- La salida ahora tiene una breve secuencia antes de mostrar el final, para que se note el cierre de la compuerta.
+- Tras restaurar la energía aparecen eventos ambientales aleatorios: interferencias, golpes y susurros.
+- La criatura reacciona al ruido de correr e investiga la última posición ruidosa antes de volver a buscarte.
+
 ## Actualización de prototipo
 - La compuerta se eleva al restaurar la energía.
 - La criatura intenta respetar paredes y obstáculos en vez de avanzar atravesándolos.
