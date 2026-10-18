@@ -20,6 +20,12 @@ Explorá la estación abandonada, encontrá el fusible, activá el panel y lleg�
 - La criatura ahora se detiene si la iluminás y la mantenés a la vista; cuando dejás de apuntarle, vuelve a moverse.
 - Los pasos y efectos breves de interferencia siguen activos.
 
+## Actualización de prototipo — BUILD 0.1.9
+- Los marcadores rectangulares de interacción ahora son invisibles; se mantiene la detección por raycast y la tecla E.
+- Se corrigió el mensaje de la linterna para que refuerce que la criatura rastrea el calor, no que se queda quieta.
+- Nuevas texturas procedurales de pared, suelo, metal y madera con desgaste, juntas y óxido.
+- Se añadieron cajas de carga, tuberías, señalética, un escritorio y una silla abandonados para sugerir el pasado industrial de la estación.
+
 ## Actualización de prototipo — BUILD 0.1.8
 - La criatura es ciega: se eliminaron los ojos visibles y ahora se orienta hacia estímulos, no hacia la mirada del jugador.
 - Tras activarse, deambula por la zona en lugar de perseguir automáticamente al jugador por proximidad.
