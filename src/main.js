@@ -24,6 +24,10 @@ function buildWorld(){
  for(let i=0;i<9;i++){let z=7-i*3.1,p=new THREE.Mesh(new THREE.CylinderGeometry(.07,.07,23,6),metal);p.rotation.z=Math.PI/2;p.position.set(0,3.48,z);scene.add(p);if(i%2===0)box('beam',0,3.78,z,23,.16,.18,dark)}
  for(let i=0;i<14;i++)box('floor grate',0,.012,8-i*2.1,2.1,.025,.06,metal);
  box('escape corridor floor',0,-.18,-35.5,5.8,.35,29.5,floor);box('escape corridor ceiling',0,4,-35.5,5.8,.25,29.5,dark);box('escape corridor left',-2.9,2,-35.5,.25,4,29.5,wall,true);box('escape corridor right',2.9,2,-35.5,.25,4,29.5,wall,true);box('escape corridor end',0,2,-50.2,5.8,4,.25,wall,true);
+ // Close the corridor sides to prevent views into the void.
+ box('corridor outer left wall',-7.45,2,-35.5,9.1,4,29.5,wall,true);box('corridor outer right wall',7.45,2,-35.5,9.1,4,29.5,wall,true);
+ box('corridor left floor extension',-7.45,-.18,-35.5,9.1,.35,29.5,floor,false);box('corridor right floor extension',7.45,-.18,-35.5,9.1,.35,29.5,floor,false);
+ box('corridor left ceiling extension',-7.45,4,-35.5,9.1,.25,29.5,dark,false);box('corridor right ceiling extension',7.45,4,-35.5,9.1,.25,29.5,dark,false);
  box('fallen cabinet',-5,.55,-4,1.3,1.1,.65,dark,true);box('storage crate',5,.55,-2,1.2,1.1,1.2,metal,true);box('broken desk',5,.45,-13,2,.9,.9,dark,true);box('shelf',-5,1.3,-16,1.3,2.6,.5,metal,true);for(let i=0;i<5;i++)box('shelf junk',-5,.35+i*.42,-16,.9,.15,.35,dark);box('fallen papers',4.3,.08,-10.6,1.1,.04,.7,material(0x8b8978));box('toolbox',6,.32,-11.7,.65,.55,.8,red,true);box('debris pile',-6,.25,-8.7,.8,.5,1.2,dark,true);box('small crate',-4,.35,-6.2,.75,.7,.8,metal,true);
  // Vestigios de una estación que estuvo en uso: embalajes, conducciones, señalética y equipo abandonado.
  crate('crate stack lower',-6.65,.42,3.2,.9);crate('crate stack upper',-6.65,1.2,3.2,.82);crate('shipping crate east',6.55,.42,4.9,.95);crate('old supply box',6.45,.38,-5.8,.78);crate('box by shelf',-6.55,.36,-14.5,.72);crate('damaged crate',6.45,.36,-16.3,.7);
