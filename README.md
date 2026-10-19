@@ -15,7 +15,7 @@ Prototipo de terror 3D retro en primera persona, creado con HTML, CSS, JavaScrip
 - **Ctrl:** agacharte; avanzás más lento y bajás el perfil para moverte con más sigilo.
 - **ESC:** pausar.
 
-## Arquitectura del código — BUILD 0.1.20
+## Arquitectura del código — BUILD 0.1.21
 
 El juego está dividido en módulos ES para que cada sistema se pueda revisar por separado:
 
@@ -30,12 +30,12 @@ El juego está dividido en módulos ES para que cada sistema se pueda revisar po
 
 Los módulos se importan desde `main.js`; no hay que abrir cada archivo por separado para jugar. Los controles solo envían acciones al juego y no construyen la escena. Esta separación mejora el mantenimiento, pero cada cambio de mecánicas igual necesita pruebas dentro del navegador.
 
-## Actualización — BUILD 0.1.20
+## Actualización — BUILD 0.1.21
 - Se separó el manejo de teclado y ratón en `src/systems/input.js`.
 - `main.js` conserva la coordinación general y entrega al módulo de controles solo las referencias que necesita.
 - Se actualizó el identificador de versión para evitar caché vieja en GitHub Pages.
 
-## Correcciones de juego — BUILD 0.1.20
+## Correcciones de juego — BUILD 0.1.21
 - Se cerraron los huecos del muro de entrada para que no se vea el vacío desde el interior.
 - La caja de corriente se movió a una pared lateral, lejos de la compuerta.
 - Insertar el fusible restaura la energía, pero ya no abre automáticamente la compuerta.
