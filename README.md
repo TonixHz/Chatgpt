@@ -12,14 +12,29 @@ Prototipo de terror 3D retro en primera persona, creado con HTML, CSS, JavaScrip
 - **Ctrl:** agacharte; avanzás más lento y bajás el perfil para moverte con más sigilo.
 - **ESC:** pausar.
 
-## Objetivo del prototipo
-Explorá la estación abandonada, encontrá el fusible, activá el panel y llegá a la compuerta. Algo empieza a seguirte cuando restaurás la energía.
+## Historia — Capítulo 1: El registro
+PROJECT: NULL se construirá como una historia episódica. Cada capítulo tendrá su propio escenario, objetivos, descubrimientos y cierre; el Capítulo 1 ocurre en una estación de mantenimiento abandonada.
+
+Objetivos actuales del Capítulo 1:
+1. Encontrar el fusible en la estación.
+2. Restaurar la energía en el panel industrial (esto despierta a la criatura).
+3. Explorar el archivo lateral, encontrar y recuperar la cinta del Registro 01.
+4. Volver a la compuerta y atravesar el largo pasillo de servicio para escapar.
+
+La cinta revela una pista inquietante: la voz grabada es idéntica a la del protagonista. La criatura es ciega y rastrea el ruido y el calor de la linterna.
 
 ## Actualización de prototipo — BUILD 0.1.6
 - Se eliminó el zumbido ambiental continuo.
 - Se añadieron pulsos graves intermitentes cuando la criatura se acerca, en lugar de un tono constante.
 - Comportamiento inicial de la criatura (reemplazado en BUILD 0.1.8): la luz afectaba su movimiento. Ahora es ciega, deambula y rastrea ruido o el calor de la linterna.
 - Los pasos y efectos breves de interferencia siguen activos.
+
+## Actualización de prototipo — BUILD 0.1.14
+- El proyecto empieza a organizarse como una historia por capítulos: **Capítulo 1 — El registro**.
+- Se amplió el mapa lateralmente y se agregó un archivo de mantenimiento explorable con estanterías, cajas y una nueva cinta recuperable.
+- El objetivo ahora tiene varias etapas: encontrar el fusible, restaurar la energía, recuperar la cinta y regresar a la compuerta.
+- La salida queda bloqueada hasta recuperar la cinta; tras cruzar la compuerta, el pasillo de servicio es mucho más largo antes del final.
+- Se actualizó el HUD, la presentación del capítulo y la versión visible a 0.1.14.
 
 ## Actualización de prototipo — BUILD 0.1.13
 - Se corrigió una condición que impedía que los eventos ambientales se activaran durante la exploración.
