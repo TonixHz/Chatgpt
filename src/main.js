@@ -51,8 +51,8 @@ function buildWorld(){
  const cableMat=new THREE.MeshStandardMaterial({color:0x151a18,roughness:.8}),wireMat=new THREE.MeshStandardMaterial({color:0x9b382d,roughness:.8});
  function cable(points,mat,radius=.045){const curve=new THREE.CatmullRomCurve3(points.map(p=>new THREE.Vector3(...p)));const mesh=new THREE.Mesh(new THREE.TubeGeometry(curve,32,radius,5,false),mat);scene.add(mesh)}
  // Cableado de mantenimiento: los dos conductores siguen la pared izquierda y cruzan por encima de la compuerta.
- cable([[-9.6,2.35,-8.0],[-11.65,2.35,-8.0],[-11.72,2.35,-11.0],[-11.72,2.35,-15.0],[-11.72,3.42,-19.8],[-8.0,3.42,-20.48],[-4.0,3.42,-20.48],[-1.5,3.42,-20.48],[1.5,3.42,-20.48],[1.65,2.3,-19.45]],cableMat,.052);
- cable([[-9.6,2.18,-8.0],[-11.48,2.18,-8.0],[-11.55,2.18,-11.0],[-11.55,2.18,-15.0],[-11.55,3.27,-19.65],[-8.0,3.27,-20.32],[-4.0,3.27,-20.32],[-1.5,3.27,-20.32],[1.5,3.27,-20.32],[1.65,2.05,-19.45]],wireMat,.034);
+ cable([[-9.6,2.35,-8.0],[-11.65,2.35,-8.0],[-11.72,2.35,-11.0],[-11.72,2.35,-15.0],[-11.72,3.42,-19.8],[-8.0,3.42,-20.48],[-4.0,3.42,-20.48],[-1.5,3.42,-20.48],[1.5,3.42,-20.48],[1.65,2.3,-20.1]],cableMat,.052);
+ cable([[-9.6,2.18,-8.0],[-11.48,2.18,-8.0],[-11.55,2.18,-11.0],[-11.55,2.18,-15.0],[-11.55,3.27,-19.65],[-8.0,3.27,-20.32],[-4.0,3.27,-20.32],[-1.5,3.27,-20.32],[1.5,3.27,-20.32],[1.65,2.05,-20.1]],wireMat,.034);
  // Caja de corriente reubicada lejos de la salida principal.
  box('power cabinet',-9.6,1.35,-8.0,1.2,2.5,.5,metal,true);
  box('fuse panel',-9.6,1.55,-7.72,.55,.75,.08,red);
@@ -60,11 +60,11 @@ function buildWorld(){
  addInteract('fuse','[E] RECOGER FUSIBLE',4.8,.82,-11.4,()=>{if(hasFuse){say('Ya encontraste el fusible.');return}hasFuse=true;scene.remove(fuse);objective('Llevá el fusible a la caja de corriente del muro izquierdo.');say('Un fusible industrial. Está tibio.');$('signal').innerHTML='SEÑAL: <b>18%</b>'});
  const redButtonMat=new THREE.MeshStandardMaterial({color:0x9c2a20,emissive:0x650800,emissiveIntensity:.9,roughness:.42});
  const greenButtonMat=new THREE.MeshStandardMaterial({color:0x42c66a,emissive:0x0c7028,emissiveIntensity:1.1,roughness:.42});
- box('gate control housing',1.65,1.42,-19.43,.42,.62,.22,metal,false);
- const gateButton=new THREE.Mesh(new THREE.BoxGeometry(.19,.15,.075),redButtonMat);gateButton.position.set(1.65,1.62,-19.29);scene.add(gateButton);
- const gateButtonLight=new THREE.PointLight(0xff2c1c,1.1,3);gateButtonLight.position.set(1.65,1.78,-19.12);scene.add(gateButtonLight);
+ box('gate control housing',1.65,1.42,-20.08,.42,.62,.22,metal,false);
+ const gateButton=new THREE.Mesh(new THREE.BoxGeometry(.19,.15,.075),redButtonMat);gateButton.position.set(1.65,1.62,-19.94);scene.add(gateButton);
+ const gateButtonLight=new THREE.PointLight(0xff2c1c,1.1,3);gateButtonLight.position.set(1.65,1.78,-19.77);scene.add(gateButtonLight);
  
- addInteract('gate-button','[E] PRESIONAR BOTÓN DE APERTURA',1.65,1.62,-19.24,()=>{
+ addInteract('gate-button','[E] PRESIONAR BOTÓN DE APERTURA',1.65,1.62,-19.89,()=>{
   if(!powerOn){say('El botón no responde. Primero restaurá la corriente.');return}
   if(gateOpenRequested||gateController.isOpen()){say('La compuerta ya está abierta.');return}
   gateOpenRequested=true;gateButton.material=greenButtonMat;gateButtonLight.color.setHex(0x35ff82);gateButtonLight.intensity=1.8;
