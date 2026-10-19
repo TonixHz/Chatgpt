@@ -32,6 +32,12 @@ La cinta revela una pista inquietante: la voz grabada es idéntica a la del prot
 - Comportamiento inicial de la criatura (reemplazado en BUILD 0.1.8): la luz afectaba su movimiento. Ahora es ciega, deambula y rastrea ruido o el calor de la linterna.
 - Los pasos y efectos breves de interferencia siguen activos.
 
+## Actualización de prototipo — BUILD 0.1.15
+- Se añadió una introducción narrativa al contrato de Sam y dos interacciones opcionales: terminal de mantenimiento y radio de emergencia.
+- La cinta del Registro 01 ahora abre una transcripción propia; la voz idéntica a Sam sigue sin explicación.
+- La Criatura Ciega tiene una silueta más táctil y puede perseguir al jugador por el corredor de servicio cuando la compuerta se abre.
+- El cierre refuerza el escape y los tres golpes desde el otro lado, sin adelantar misterios de capítulos posteriores.
+
 ## Actualización de prototipo — BUILD 0.1.14
 - El proyecto empieza a organizarse como una historia por capítulos: **Capítulo 1 — El registro**.
 - Se amplió el mapa lateralmente y se agregó un archivo de mantenimiento explorable con estanterías, cajas y una nueva cinta recuperable.
