@@ -7,7 +7,7 @@ import {createCreatureSystem} from './systems/creature.js';
 import {createPlayerController} from './systems/player.js';
 import {bindKeyboardAndMouse} from './systems/input.js';
 const $=id=>document.getElementById(id),menu=$('menu'),hud=$('hud'),pauseScreen=$('pause'),endingScreen=$('ending'),loading=$('loading'),prompt=$('prompt'),message=$('message');
-let scene,camera,renderer,clock,player,flashlight,ambient,monster,gate,started=false,paused=false,ended=false,hasFuse=false,hasTape=false,powerOn=false,flashlightOn=true,battery=100,stamina=100,messageTimer=0,interactTarget=null,exitPending=false,exitTimer=0,eventTimer=0,wasSprinting=false,endingFadeStarted=false;
+let scene,camera,renderer,clock,player,flashlight,ambient,monster,gate,started=false,paused=false,ended=false,hasFuse=false,hasTape=false,powerOn=false,flashlightOn=true,battery=100,stamina=100,messageTimer=0,interactTarget=null,exitPending=false,exitTimer=0,eventTimer=0,wasSprinting=false,endingFadeStarted=false,gateOpenRequested=false;
 const keys=Object.create(null),colliders=[],interactables=[],world={monsterAwake:false,monsterSpeed:1.15,elapsed:0,lastNoise:null,aiMode:'dormant',path:[],pathTimer:0,flashFlicker:0,flashMultiplier:1,seenMonster:false,noiseTimer:0,roamTarget:null,investigateTimer:0,lightTarget:false},clamp=THREE.MathUtils.clamp,raycaster=new THREE.Raycaster();
 const gateController=createGateController({colliders});
 const {material,textured}=createMaterials(THREE);
@@ -66,7 +66,7 @@ function buildWorld(){
  box('gate control housing',1.65,1.42,-19.43,.42,.62,.22,metal,false);
  const gateButton=new THREE.Mesh(new THREE.BoxGeometry(.19,.15,.075),redButtonMat);gateButton.position.set(1.65,1.62,-19.29);scene.add(gateButton);
  const gateButtonLight=new THREE.PointLight(0xff2c1c,1.1,3);gateButtonLight.position.set(1.65,1.78,-19.12);scene.add(gateButtonLight);
- let gateOpenRequested=false;
+ 
  addInteract('gate-button','[E] PRESIONAR BOTÓN DE APERTURA',1.65,1.62,-19.24,()=>{
   if(!powerOn){say('El botón no responde. Primero restaurá la corriente.');return}
   if(gateOpenRequested||gateController.isOpen()){say('La compuerta ya está abierta.');return}
