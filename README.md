@@ -15,7 +15,7 @@ Prototipo de terror 3D retro en primera persona, creado con HTML, CSS, JavaScrip
 - **Ctrl:** agacharte; avanzás más lento y bajás el perfil para moverte con más sigilo.
 - **ESC:** pausar.
 
-## Arquitectura del código — BUILD 0.1.19
+## Arquitectura del código — BUILD 0.1.20
 
 El juego está dividido en módulos ES para que cada sistema se pueda revisar por separado:
 
@@ -30,10 +30,20 @@ El juego está dividido en módulos ES para que cada sistema se pueda revisar po
 
 Los módulos se importan desde `main.js`; no hay que abrir cada archivo por separado para jugar. Los controles solo envían acciones al juego y no construyen la escena. Esta separación mejora el mantenimiento, pero cada cambio de mecánicas igual necesita pruebas dentro del navegador.
 
-## Actualización — BUILD 0.1.19
+## Actualización — BUILD 0.1.20
 - Se separó el manejo de teclado y ratón en `src/systems/input.js`.
 - `main.js` conserva la coordinación general y entrega al módulo de controles solo las referencias que necesita.
 - Se actualizó el identificador de versión para evitar caché vieja en GitHub Pages.
+
+## Correcciones de juego — BUILD 0.1.20
+- Se cerraron los huecos del muro de entrada para que no se vea el vacío desde el interior.
+- La caja de corriente se movió a una pared lateral, lejos de la compuerta.
+- Insertar el fusible restaura la energía, pero ya no abre automáticamente la compuerta.
+- Se añadió un botón físico rojo junto a la compuerta: al activarlo, cambia a verde y dispara la animación de apertura.
+- El controlador de la compuerta solo abre cuando recibe la solicitud del botón y retira la colisión al terminar.
+- Se agrandaron y alinearon las zonas invisibles de interacción sobre los objetos.
+- La criatura aparece en la zona central cuando vuelve la energía y se amplió su cuadrícula de navegación para cubrir el sector de entrada.
+- Se reorganizó el cableado para que siga las paredes y cruce por encima de la compuerta.
 
 ## Historia — Capítulo 1: El registro
 PROJECT: NULL se construirá como una historia episódica. Cada capítulo tendrá su propio escenario, objetivos, descubrimientos y cierre; el Capítulo 1 ocurre en una estación de mantenimiento abandonada.
