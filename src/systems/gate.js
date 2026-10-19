@@ -5,8 +5,8 @@ export function createGateController({colliders}){
  }
  function update(dt,openRequested){
   if(!gate||!openRequested||open)return;
-  gate.position.y=Math.min(3.75,gate.position.y+dt*1.85);
-  if(gate.position.y>=3.75){
+  gate.position.y=Math.min(3.25,gate.position.y+dt*2.4);
+  if(gate.position.y>=2.85){
    open=true;
    if(collider){const i=colliders.indexOf(collider);if(i>=0)colliders.splice(i,1);collider=null}
   }
