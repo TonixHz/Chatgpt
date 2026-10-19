@@ -2,6 +2,9 @@
 
 Prototipo de terror 3D retro en primera persona, creado con HTML, CSS, JavaScript y Three.js. Proyecto independiente.
 
+## Documento principal de historia y continuidad
+**Antes de trabajar en la narrativa o modificar capítulos, leer [la Biblia Maestra de PROJECT: NULL](docs/PROJECT_NULL_BIBLIA.md).** Contiene las decisiones canónicas, los cinco capítulos iniciales, los monstruos, las reglas de continuidad y los límites de lo que todavía no debe revelarse.
+
 ## Cómo jugar
 - Abrí index.html desde un servidor estático (por ejemplo, GitHub Pages).
 - **WASD / flechas:** moverte.
