@@ -15,19 +15,25 @@ Prototipo de terror 3D retro en primera persona, creado con HTML, CSS, JavaScrip
 - **Ctrl:** agacharte; avanzás más lento y bajás el perfil para moverte con más sigilo.
 - **ESC:** pausar.
 
-## Arquitectura del código — BUILD 0.1.18
+## Arquitectura del código — BUILD 0.1.19
 
 El juego está dividido en módulos ES para que cada sistema se pueda revisar por separado:
 
 - `src/main.js`: inicialización, construcción de la escena y bucle principal.
 - `src/systems/player.js`: movimiento, correr, agacharse y resistencia.
+- `src/systems/input.js`: eventos de teclado y ratón, aislados del juego.
 - `src/systems/creature.js`: comportamiento de la criatura y búsqueda de caminos.
 - `src/systems/gate.js`: animación, estado de apertura y colisión de la compuerta.
 - `src/systems/interactions.js`: selección de objetos interactivos y tecla E.
 - `src/systems/audio.js`: pasos, señales de proximidad y efectos sonoros.
 - `src/systems/materials.js`: materiales y texturas procedurales compartidas.
 
-Los módulos se importan desde `main.js`; no hay que abrir cada archivo por separado para jugar. Esta separación mejora el mantenimiento, pero cada cambio de mecánicas igual necesita pruebas dentro del navegador.
+Los módulos se importan desde `main.js`; no hay que abrir cada archivo por separado para jugar. Los controles solo envían acciones al juego y no construyen la escena. Esta separación mejora el mantenimiento, pero cada cambio de mecánicas igual necesita pruebas dentro del navegador.
+
+## Actualización — BUILD 0.1.19
+- Se separó el manejo de teclado y ratón en `src/systems/input.js`.
+- `main.js` conserva la coordinación general y entrega al módulo de controles solo las referencias que necesita.
+- Se actualizó el identificador de versión para evitar caché vieja en GitHub Pages.
 
 ## Historia — Capítulo 1: El registro
 PROJECT: NULL se construirá como una historia episódica. Cada capítulo tendrá su propio escenario, objetivos, descubrimientos y cierre; el Capítulo 1 ocurre en una estación de mantenimiento abandonada.
